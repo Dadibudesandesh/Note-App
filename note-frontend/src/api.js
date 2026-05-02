@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL="http://localhost:8080/api/notes";
+const URL="note-app-production-6540.up.railway.app/api/notes";
 
 export const createNote =(note)=>axios.post(`${URL}/addNote`,note);
 export const getAllNotes =()=>axios.get(`${URL}/getAll`);
